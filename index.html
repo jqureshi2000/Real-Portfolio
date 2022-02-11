@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jawwad Qureshi's Portfolio</title>
-    <link rel="icon" href="images/JQ-logos/JQ-logos_white.png" type="image/icon type">
+    <link rel="icon" href="images/JQ-logos/JQ-logos_black.png" type="image/icon type">
 
     <link rel="stylesheet" href="portfolio.css">
 
@@ -20,27 +20,52 @@
 </head>
 
 <body>
-    <header>
-        <img class ="logo" src="images/JQ-logos/JQ-logos_transparent1.png" alt="My Logo" id = "myLogo" >    
-        <nav>
-            <ul class = "nav_links">
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Resume</a></li>
-            </ul>
-        </nav>
-        <a class="contact" href="#"><button id = "ContactButton">Contact Me</button></a>
-    </header>
+    <div id = "headerColor">
+        <header>
+            <img class ="logo" src="images/JQ-logos/JQ-logos_white.png" alt="My Logo" id = "myLogo" >    
+            <nav>
+                <ul class = "nav_links">
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+            <a class="contact" href="#"><button id = "ContactButton">Contact Me</button></a>
+        </header>
+    </div>
 
     <hr class = "animate__animated animate__fadeInLeft">
-    <div id = "tagline">
-        <br>
-        <h1 class="animate__animated animate__bounce">Web Development done differently.</h1>
-        <br>
+    <div id = "mainbody">
+        <div class = "tagline">
+            <br>
+            <h1 class="animate__animated animate__bounce">Web Development done differently.</h1>
+            <h2>
+                My name is Jawwad Qureshi. Welcome to my portfolio! <br>
+                I am an aspiring Full Stack Web Developer with experience in HTML5, CSS3, and JavaScript.
+            </h2>
+            <br>
+        </div>
     </div>
-    <hr class = "animate__animated animate__fadeInRight">
 
+    <hr class = "animate__animated animate__fadeInRight">
+    <div class = 'aboutme'>
+        <div class='child flex-child'>
+            <h3>
+                I am a Senior in Georgia Gwinnett College studying Software Development.<br>
+                I found my love for programming after being in the 5% of students to complete the entire IT path provided at my High School.
+                
+            </h3>
+        </div>
+        <div class='child flex-child'>B</div>
+
+    </div>
+    <hr>
+
+    <br><br><br>
+    <h1 id = "previousWork">Check out my previous work:</h1><br>
     <div class="container">
+
+
         <div class="glide">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -56,7 +81,7 @@
         </div>
     </div>
 
-      <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 
         <script>
             const config = {
