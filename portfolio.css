@@ -15,7 +15,7 @@ body {
     font-family:'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     
 }
@@ -26,6 +26,14 @@ header {
     align-items: center;
     padding: 30px 10%;
     font-weight: bold;
+    margin: 0%;
+}
+
+#headerColor {
+    background-color: #2A2B2A;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .logo {
@@ -46,20 +54,49 @@ header {
 }
 
 .nav_links li a:hover {
-    color: #0088A9
+    color: #0088A9;
 }
 
 #ContactButton{
     padding: 9px 25px;
-    background-color: rgba(252, 175, 88, 1);
+    background-color: #0088A9;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
-h1 {
+h1, h2, h3 {
     font-family:'Montserrat', sans-serif;
+}
+
+h2 {
+    line-height: 1em;
+}
+
+#previousWork {
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.tagline {
+    padding-top: 5%;
+    padding-bottom: 27%;
+    padding-left: 2%;
+    
+}
+
+#mainbody {
+    background: #fff url(images/wave.svg) no-repeat bottom right;
+    padding: 0%;
+    margin: 0%;
+} 
+
+hr {
+    height: 5px;
+    background-color: #2A2B2A;
+    margin: 0px;
+    padding: 0px;
 }
 
 .darkmode--activated p, .darkmode--activated li {
@@ -78,9 +115,19 @@ h1 {
 .container img {
     height: 50%;
     justify-content: center;
+
 }
 
 .glide__arrows button {
     background-color: black;
     cursor: pointer;
+}
+
+.aboutme {
+    display: flex;
+  }
+
+.flex-child {
+    flex: 1;
+    padding: 2em;
 }
